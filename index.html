@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M3 Recipe Finder</title>
+    <!-- Google Fonts: Roboto for Material Design -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="app-container">
+        
+        <!-- MAIN CONTENT AREA -->
+        <main class="main-content">
+            <!-- Search Section -->
+            <form id="search-form" class="search-form">
+                <input 
+                    type="text" 
+                    id="search-input" 
+                    class="search-input" 
+                    placeholder="Search for a recipe (e.g., Chicken, Pasta)..."
+                    autocomplete="off"
+                >
+                <button type="submit" class="btn-filled">Search</button>
+            </form>
+
+            <!-- Recipes Grid -->
+            <div id="recipe-container" class="recipe-grid">
+                
+                <!-- DUMMY DATA: The JS will eventually overwrite everything inside #recipe-container -->
+                <div class="card" data-id="52772">
+                    <img src="https://www.themealdb.com/images/media/meals/vurrux1568203102.jpg" alt="Teriyaki Chicken Casserole">
+                    <div class="card-content">
+                        <h3>Teriyaki Chicken</h3>
+                        <div class="card-actions">
+                            <button class="btn-tonal view-btn">Recipe Details</button>
+                            <button class="btn-tonal fav-btn">❤️ Save</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" data-id="52977">
+                    <img src="https://www.themealdb.com/images/media/meals/syqypv1486981727.jpg" alt="Spicy Arrabiata Penne">
+                    <div class="card-content">
+                        <h3>Spicy Arrabiata</h3>
+                        <div class="card-actions">
+                            <button class="btn-tonal view-btn">Recipe Details</button>
+                            <button class="btn-tonal fav-btn">❤️ Save</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </main>
+
+        <!-- SIDEBAR: FAVORITES -->
+        <aside class="sidebar">
+            <h2>Your Favorites</h2>
+            <ul id="favorites-container" class="favorites-list">
+                <!-- DUMMY DATA: JS will populate this from LocalStorage -->
+                <li class="favorite-item">
+                    <span>Teriyaki Chicken</span>
+                    <button class="remove-fav-btn" title="Remove">✕</button>
+                </li>
+            </ul>
+        </aside>
+
+    </div>
+
+    <!-- MODAL (Recipe Details) -->
+    <dialog id="recipe-modal">
+        <div class="modal-header">
+            <h2 id="modal-title" class="modal-title">Recipe Name</h2>
+            <button id="close-modal-btn" class="btn-tonal close-btn">Close</button>
+        </div>
+        <div id="modal-content" class="modal-body">
+            <p><strong>Ingredients:</strong> Loading...</p>
+            <p><strong>Instructions:</strong> Loading...</p>
+        </div>
+    </dialog>
+
+    <!-- <script src="main.js"></script> -->
+</body>
+</html>
