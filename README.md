@@ -1,4 +1,4 @@
-# Culinary Compass (M3 Recipe Finder)
+# Culinary Compass
 
 Culinary Compass is a responsive, front-end web application that allows users to search for recipes, view detailed instructions and ingredients, and save their favorite meals. It is built using vanilla web technologies and integrates with [TheMealDB API](https://www.themealdb.com/api.php).
 
@@ -31,7 +31,7 @@ You only need a modern web browser (Chrome, Firefox, Safari, Edge) to run this a
 1. Clone the repository:
 
    ```bash
-   git clone <your-repository-url>
+   git clone https://github.com/Moringa-SDF-PT14/culinary-compass
    ```
 
 2. Navigate to the project directory:
