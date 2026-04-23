@@ -23,7 +23,7 @@
 
     /* Typography & Shapes */
     --md-sys-typescale-body: 16px;
-    --md-sys-shape-corner-full: 100px;
+    --md-sys-shape-corner-full: 32px;
     --md-sys-shape-corner-large: 24px;
     --md-sys-shape-corner-medium: 16px;
 }
