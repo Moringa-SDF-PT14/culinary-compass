@@ -7,5 +7,8 @@
 ehthumbs.db
 Thumbs.db
 
+# secret files
+environment.secrets
+
 # IDEs and Editors
 .vscode/
